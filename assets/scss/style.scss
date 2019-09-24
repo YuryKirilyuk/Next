@@ -1,0 +1,29 @@
+/*
+Theme Name:  Next
+Template:    Divi
+Author:      Yury K
+Version:     1.0.0
+*/
+
+@import url("../Divi/style.css");
+
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+
+
+@import "layout/fonts";
+@import "layout/common";
+@import "layout/partials";
+@import "layout/buttons";
+@import "layout/navbar";
+@import "layout/forms";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/partners";
+@import "pages/solutions";
+@import "pages/about";
+@import "pages/membership";
+@import "pages/contact";

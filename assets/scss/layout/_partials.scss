@@ -1,0 +1,53 @@
+h1,h2,h3,h4,h5,h6 {
+  span {white-space: nowrap;}
+}
+
+.page-title {
+  background: linear-gradient(65deg, #136a9c 17%, #1d87c7 0);
+  color: #fff;
+  //font-weight: 300;
+  font-size: 2.7rem;
+  line-height: normal;
+  padding: 0 !important;
+  @media screen and (min-width: 981px) {height: 20rem;}
+  @media screen and (max-width: 1200px) {font-size: 2.3rem;}
+  @media screen and (max-width: 980px) {font-size: 2rem;}
+
+  .et_pb_row {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    @media screen and (max-width: 768px) {flex-direction: column;}
+
+    .et_pb_column {
+      margin-bottom: 0;
+      &:first-child {
+        flex-shrink: 0;
+        padding-right: 5.5%;
+        width: auto;
+        @media screen and (min-width: 769px) {
+          width: 20%;
+          min-width: 28rem;
+        }
+      }
+      &:last-child {
+        width: auto;
+        @media screen and (min-width: 769px) {
+          width: 77%;
+        }
+      }
+    }
+  }
+
+  .entry-title {
+    color: #fff;
+    font-family: $custom-font-family;
+    font-size: 6.5rem !important;
+    white-space: nowrap;
+    @media screen and (max-width: 980px) {font-size: 5.5rem !important;}
+    @media screen and (max-width: 580px) {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+  }
+}//.page-title

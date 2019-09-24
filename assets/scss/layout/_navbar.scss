@@ -1,0 +1,106 @@
+#main-header {
+  .container {
+    @media screen and (min-width: 981px) and (max-width: 1450px) {width: 95%;}
+    @media screen and (min-width: 981px) and (max-width: 1030px) {width: 97%;}
+  }
+
+  @media only screen and (min-width: 981px) and (max-width: 1150px) {
+    #logo {max-height: 40%;}
+  }
+
+
+  #top-menu-nav {
+    @media screen and (min-width: 981px) {
+      transform: translateY(-8px);
+      white-space: nowrap;
+    }
+  }
+  #top-menu li {
+    @media screen and (max-width: 1230px) {
+      padding-right: 1rem;
+    }
+  }
+  #top-menu li a {
+    font-weight: 600;
+    @media screen and (max-width: 1075px) {
+      font-size: 1.6rem;
+    }
+  }
+
+
+  .btn {
+    padding: 0;
+    a {
+      padding: 0 !important;
+      color: #fff !important;
+      height: 4.6rem;
+      line-height: 4.6rem;
+      opacity: 1 !important;
+      text-align: center;
+      width: 14rem;
+      @media screen and (max-width: 1150px) {
+        width: 13rem;
+      }
+      @media screen and (max-width: 1030px) {
+        //width: 10rem;
+      }
+    }
+    &.btn-contact {
+      @media screen and (min-width: 1231px) {margin-left: 2.5rem;}
+      @media screen and (max-width: 980px) {display: none;}
+      a {
+        background: $violet;
+        font-weight: 500 !important;
+        &:hover {background: #8f2556;}
+      }
+    }
+    &.btn-signup {
+      @media screen and (min-width: 1231px) {margin-left: 2rem;}
+      a {
+        background: $blue url(assets/img/btn.png) no-repeat right center;
+        //background-size: contain;
+        color: transparent;
+        text-indent: -9999px;
+        &:hover {filter: brightness(0.9);}
+      }
+    }
+    &.btn-mob {
+
+      @media screen and (min-width: 981px) {display: none;}
+      @media screen and (max-width: 980px) {display: block;}
+      @media screen and (max-width: 480px) {width: 10rem;}
+      a {
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }//.btn
+
+
+  .et_menu_container {
+    @media screen and (max-width: 980px) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      &:after {content: none;}
+    }
+    .logo_container{
+      @media screen and (max-width: 980px) {
+        position: relative;
+        width: auto;
+        #logo {max-width: 100px;}
+      }
+
+    }
+    #et-top-navigation {
+      @media screen and (max-width: 980px) {padding-left: 0 !important;}
+    }
+  }
+
+
+  #mobile_menu {
+    .btn a {width: 100%;}
+  }
+
+}//#main-header
