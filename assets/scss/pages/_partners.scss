@@ -412,7 +412,11 @@
           padding-top: 1rem;
         }
       }
-      .et_pb_image {text-align: center;}
+      .et_pb_image {
+        text-align: center;
+        transition: $default-transition;
+        //&:hover {transform: scale(1.05);}
+      }
 
     }//.et_pb_column
 
@@ -431,6 +435,8 @@
     .et_pb_image {
       display: inline-block;
       margin: 1.5rem;
+      transition: $default-transition;
+      //&:hover {transform: scale(1.05);}
     }
   }
 

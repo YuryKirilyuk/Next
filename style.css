@@ -992,13 +992,13 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 @media screen and (max-width: 980px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column h4 { background: #eee; padding-top: 1rem; } }
 
-.partners .section-text .et_pb_row:nth-child(2) .et_pb_column .et_pb_image { text-align: center; }
+.partners .section-text .et_pb_row:nth-child(2) .et_pb_column .et_pb_image { text-align: center; transition: all 0.3s linear; }
 
 .partners .section-text .et_pb_row:last-child { padding-top: 0; text-align: center; }
 
 @media screen and (min-width: 981px) { .partners .section-text .et_pb_row:last-child .et_pb_column { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; } }
 
-.partners .section-text .et_pb_row:last-child .et_pb_image { display: inline-block; margin: 1.5rem; }
+.partners .section-text .et_pb_row:last-child .et_pb_image { display: inline-block; margin: 1.5rem; transition: all 0.3s linear; }
 
 .section-CTA-form { background: #ad2662; background-image: linear-gradient(-60deg, #8f2556 440px, #ad2662 0); background-position: right bottom; background-repeat: no-repeat; background-size: 1920px 500px; color: #fff; font-size: 2.5rem; padding: 2.5rem 0 3rem !important; }
 
