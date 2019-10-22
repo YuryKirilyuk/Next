@@ -977,28 +977,39 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 .section-text h2:after { background: #1f2021; bottom: -2.8rem; content: ''; height: 1px; left: 0; margin: auto; position: absolute; right: 0; width: 8.6rem; }
 
-.partners .section-text h4 { color: #6a747c; font-family: "Oswald", sans-serif; font-size: 1.9rem; line-height: normal; margin-bottom: 1.5rem; text-align: center; text-transform: uppercase; }
+.partners .section-text h4 { -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #6a747c; display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Oswald", sans-serif; font-size: 1.9rem; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; line-height: normal; margin-bottom: 1.5rem; min-height: 76px; text-align: center; text-transform: uppercase; }
 
 .partners .section-text .et_pb_row:nth-child(2) { display: -webkit-flex; display: -ms-flexbox; display: flex; margin-top: 1.5rem; padding-bottom: 0; }
 
 @media screen and (min-width: 981px) and (max-width: 1300px) { .partners .section-text .et_pb_row:nth-child(2) { width: 90%; } }
 
-@media screen and (min-width: 981px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column { margin-right: 0; padding: 2.5rem 1.5rem; text-align: center; width: 25%; }
-  .partners .section-text .et_pb_row:nth-child(2) .et_pb_column:not(:first-child) { border-left: 1px solid #cfd7db; } }
+@media screen and (max-width: 980px) { .partners .section-text .et_pb_row:nth-child(2) { width: 95%; } }
+
+.partners .section-text .et_pb_row:nth-child(2) .et_pb_column:not(:first-child) { border-left: 1px solid #cfd7db; }
+
+@media screen and (min-width: 769px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column { margin-right: 0; padding: 2.5rem 1.5rem; text-align: center; width: 25%; } }
 
 @media screen and (max-width: 980px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column { margin-bottom: 4rem; padding-bottom: 3rem; } }
 
-@media screen and (min-width: 981px) and (max-width: 1260px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column h4 { font-size: 1.6rem; } }
+@media screen and (max-width: 768px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column:nth-child(3) { border-left: none; } }
 
 @media screen and (max-width: 980px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column h4 { padding-top: 1rem; } }
 
+@media screen and (max-width: 475px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column h4 { font-size: 1.6rem; } }
+
 .partners .section-text .et_pb_row:nth-child(2) .et_pb_column .et_pb_image { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; min-height: 120px; text-align: center; transition: all 0.3s linear; }
+
+@media screen and (min-width: 476px) and (max-width: 650px) { .partners .section-text .et_pb_row:nth-child(2) .et_pb_column .et_pb_image { margin: 0 15px; } }
 
 .partners .section-text .et_pb_row:nth-child(4) { padding-top: 0; }
 
-.partners .section-text .et_pb_row:nth-child(4) .et_pb_image { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; min-height: 120px; text-align: center; transition: all 0.3s linear; }
+.partners .section-text .et_pb_row:nth-child(4) .et_pb_image { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 0; min-height: 120px; text-align: center; transition: all 0.3s linear; }
+
+.partners .section-text .et_pb_row:nth-child(4) .et_pb_text { font-size: 14px; }
 
 .partners .section-text .et_pb_row:last-child { padding-top: 0; text-align: center; }
+
+@media screen and (max-width: 550px) { .partners .section-text .et_pb_row:last-child { width: 95%; } }
 
 @media screen and (min-width: 981px) { .partners .section-text .et_pb_row:last-child .et_pb_column { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; } }
 

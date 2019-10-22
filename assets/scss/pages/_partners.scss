@@ -88,8 +88,6 @@
 }//.section-premier-advantages
 
 
-
-
 .section-premier-partners {
   padding-bottom: 0!important;
   @media screen and (min-width: 981px) {
@@ -296,9 +294,7 @@
           margin-bottom: 1.5rem;
           text-align: center;
           text-transform: uppercase;
-          span {
-            white-space: normal;
-          }
+          span {white-space: normal;}
         }
         .et_pb_main_blurb_image {
           margin-bottom: 0;
@@ -376,15 +372,24 @@
   }
 }//.section-text
 
+
 .partners .section-text {
   h4 {
+    align-items: center;
     color: #6a747c;
+    display: flex;
     font-family: $custom-font-family;
     font-size: 1.9rem;
+    justify-content: center;
     line-height: normal;
     margin-bottom: 1.5rem;
+    min-height: 76px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .et_pb_row {
+    //@media screen and (max-width: 550px) {width: 90%;}
   }
 
   .et_pb_row:nth-child(2) {
@@ -392,26 +397,27 @@
     margin-top: 1.5rem;
     padding-bottom: 0;
     @media screen and (min-width: 981px) and (max-width: 1300px) {width: 90%;}
+    @media screen and (max-width: 980px) {width: 95%;}
 
     .et_pb_column {
-      @media screen and (min-width: 981px) {
+      &:not(:first-child) {border-left: 1px solid #cfd7db;}
+      @media screen and (min-width: 769px) {
         margin-right: 0;
         padding: 2.5rem 1.5rem;
         text-align: center;
         width: 25%;
-        &:not(:first-child) {border-left: 1px solid #cfd7db;}
       }
       @media screen and (max-width: 980px) {
         margin-bottom: 4rem;
         padding-bottom: 3rem;
       }
+      &:nth-child(3) {
+        @media screen and (max-width: 768px) {border-left: none;}
+      }
 
       h4 {
-        @media screen and (min-width: 981px) and (max-width: 1260px) {font-size: 1.6rem;}
-        @media screen and (max-width: 980px) {
-          //background: #eee;
-          padding-top: 1rem;
-        }
+        @media screen and (max-width: 980px) {padding-top: 1rem;}
+        @media screen and (max-width: 475px) {font-size: 1.6rem;}
       }
       .et_pb_image {
         align-items: center;
@@ -420,12 +426,14 @@
         min-height: 120px;
         text-align: center;
         transition: $default-transition;
-        //@media screen and (max-width: 768px) {min-height: 90px;}
+        @media screen and (min-width: 981px) {}
+        @media screen and (min-width: 476px) and (max-width: 650px) {margin: 0 15px;}
       }
 
     }//.et_pb_column
 
   }//.et_pb_row:nth-child(2)
+
 
   .et_pb_row:nth-child(4) {
     padding-top: 0;
@@ -433,16 +441,19 @@
       align-items: center;
       display: flex;
       justify-content: center;
+      margin-bottom: 0;
       min-height: 120px;
       text-align: center;
       transition: $default-transition;
       //@media screen and (max-width: 768px) {min-height: 90px;}
     }
+    .et_pb_text {font-size: 14px;}
   }
 
   .et_pb_row:last-child {
     padding-top: 0;
     text-align: center;
+    @media screen and (max-width: 550px) {width: 95%;}
     .et_pb_column {
       @media screen and (min-width: 981px) {
         align-items: center;
@@ -457,7 +468,7 @@
       margin: 0 1.5rem;
       min-height: 120px;
       transition: $default-transition;
-      //&:hover {transform: scale(1.05);}
+      @media screen and (min-width: 981px) {}
     }
   }
 
@@ -494,7 +505,6 @@
     }
   }
 }//.section-CTA-form
-
 
 
 .section-contact-form {
