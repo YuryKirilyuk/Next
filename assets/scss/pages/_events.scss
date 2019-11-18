@@ -1,0 +1,133 @@
+.section-pitchmasters {
+  background: #f5f5f5;
+  @media screen and (min-width: 981px) {padding: 70px 0 !important;}
+
+  .et_pb_row:nth-child(2) {
+    @media screen and (min-width: 981px) {padding-top: 10px !important;}
+
+    .et_pb_column {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: 600px) {flex-direction: column;}
+      &:after {content: none;}
+
+      > .et_pb_module {
+        margin: 0 30px;
+        &:first-child {margin-left: 0;}
+        &:last-child {margin-right: 0;}
+        @media screen and (max-width: 600px) {margin: 7px 0;}
+      }
+
+      .et_pb_text {
+        color: $grey;
+        font-family: $custom-font-family;
+        font-size: 19px;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+    }//.et_pb_column
+
+  }//.et_pb_row:nth-child(2)
+
+  .et_pb_text {
+    color: #111;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.16;
+
+    a {
+      color: $light-blue;
+      &:hover {color: $violet;}
+    }
+
+    p {padding-bottom: 1em;}
+
+    ul {
+      list-style: none;
+      padding-left: 30px;
+      li {
+        padding: 7px 0;
+        position: relative;
+        &:not(:last-child) {border-bottom: 1px solid #d0d7db;}
+        &:before {
+          background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAYCAMAAAArvOYAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAC3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7cAAAAxaSPYAAAAEHRSTlMAQIBwEO8wz79gjyDfn69QOsaFywAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAACJSURBVBjTXZBJFsQgCETLkTgk8f6n7QbU8KwVfopBAJHzPjhsRZ8GK/moIOubRfkAfxu7aFhdQNFcDVW9Ti3E5tY5vCGJpitw2IXQXEPqMNsdxFYl0zlK+MzpPbg9Hf3cENmCJB29IUWHXhvc6z7r9z2uk72T5O+KVUCAEcluVi3p+YzKcDi0wQ9LIA0gzwFm2gAAAABJRU5ErkJggg==") no-repeat center;
+          background-size: contain;
+          content: '';
+          height: 28px;
+          left: -28px;
+          position: absolute;
+          top: 5px;
+          width: 18px;
+        }
+      }
+    }
+  }//.et_pb_text
+
+
+}//.section-pitchmasters
+
+
+
+.section-upcoming-events {
+
+  h2 {
+    font-family: $custom-font-family;
+    font-size: 4.7rem;
+    margin-bottom: 3.5rem;
+    padding: 0 2rem;
+    position: relative;
+    text-align: center;
+    &:after {
+      background: #0d2432;
+      bottom: -3.8rem;
+      content: '';
+      height: 1px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      width: 8.6rem;
+    }
+
+    span {
+      color: $grey;
+      white-space: normal;
+    }
+
+  }//h2
+
+  h3 {
+    color: $black;
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}//.section-upcoming-events
+
+
+
+
+
+
+
+
+
+
+
+
+.section-coming-soon {
+  background: #e1e3e5;
+  padding: 15px 0 20px !important;
+
+  .et_pb_text {
+    color: #12131b;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+  }//.et_pb_text
+
+}//.section-coming-soon

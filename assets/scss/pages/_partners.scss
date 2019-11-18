@@ -411,6 +411,9 @@
         margin-bottom: 4rem;
         padding-bottom: 3rem;
       }
+      @media screen and (max-width: 475px) {
+        border-left: none !important;
+      }
       &:nth-child(3) {
         @media screen and (max-width: 768px) {border-left: none;}
       }
@@ -471,6 +474,44 @@
       @media screen and (min-width: 981px) {}
     }
   }
+
+
+
+  .row-title {
+    color: $grey;
+    font-family: $custom-font-family;
+    font-size: 1.9rem;
+    line-height: normal;
+    margin-top: 30px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    &:before {
+      background: #d0d7db;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 5px;
+    }
+    .et_pb_text {
+      background: #fff;
+      display: inline-block;
+      padding: 0 2rem;
+    }
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+
+
+
+
 
 }//.partners .section-text
 
@@ -559,3 +600,4 @@
     }
   }
 }
+

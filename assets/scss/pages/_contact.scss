@@ -113,7 +113,8 @@
 }//.section-form-title
 
 
-.contact .section-contact-form {
+.contact .section-contact-form,
+.events .section-contact-form {
   background: #fff;
   @media screen and (min-width: 981px) {
     padding-bottom: 6rem !important;
