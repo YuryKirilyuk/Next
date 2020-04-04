@@ -181,7 +181,7 @@
 .crisis-mitigation-packages {
   .page-title .et_pb_row .et_pb_column:first-child {
     padding-right: 0;
-    @media screen and (min-width: 981px) {min-width: 45rem;}
+    @media screen and (min-width: 981px) {min-width: 51rem;}
     @media screen and (min-width: 769px) {width: 30%;}
   }
   .entry-title {white-space: normal;}
@@ -217,8 +217,12 @@
 .section-package-3,
 .section-package-4 {
   @extend .section-seed-stage;
-  @media screen and (min-width: 601px) {padding-bottom: 165px !important;}
+  @media screen and (min-width: 601px) {padding-bottom: 200px !important;}
 
+  .et_pb_row:first-child {
+    min-height: 153px;
+    h3 {font-size: 28px;}
+  }
   h3 {white-space: normal;}
 }
 .section-package-1,
